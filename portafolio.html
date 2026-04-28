@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misael Urquidez — Dev Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+
+<div id="sky"></div>
+<div id="noise"></div>
+<div id="scanlines"></div>
+<div id="stars"></div>
+<div id="sun"></div>
+<div id="moon"></div>
+<div id="progress-bar"></div>
+
+<!-- Clouds -->
+<div class="cloud" style="top:8%;width:96px;animation-duration:45s;animation-delay:0s;"></div>
+<div class="cloud" style="top:15%;width:64px;animation-duration:60s;animation-delay:-20s;"></div>
+<div class="cloud" style="top:22%;width:128px;animation-duration:80s;animation-delay:-40s;"></div>
+<div class="cloud" style="top:6%;width:80px;animation-duration:55s;animation-delay:-10s;"></div>
+
+<nav>
+  <a href="#hero">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#skills">SKILLS</a>
+  <a href="#projects">PROJECTS</a>
+  <a href="#experience">EXP</a>
+  <a href="#github">GITHUB</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<!-- ================ HERO ================ -->
+<section id="hero">
+  <div style="text-align:center; position:relative; z-index:10;">
+    <div class="pixel-avatar">
+      <img id="avatarImg" src="gatoru.png" alt="Avatar">
+    </div>
+
+    <div class="hero-title">Misael Urquidez Arredondo</div>
+    <div class="hero-subtitle"><span class="typing-text" id="typeTarget"></span></div>
+    <div style="margin-top:8px; margin-bottom:32px;">
+      <span class="gpa-badge">★ GPA 9.56/10 ★</span>
+    </div>
+    <div>
+      <a href="#projects" class="pixel-btn">▶ VER PROYECTOS</a>
+      <a href="#contact" class="pixel-btn alt">✉ CONTACTO</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">▼ SCROLL ▼</div>
+</section>
+
+<!-- Ground between hero and about -->
+<div class="pixel-ground"></div>
+
+<!-- ================ ABOUT ================ -->
+<section id="about" class="section-panel">
+  <div class="container">
+    <h2 class="section-title fade-in">◈ SOBRE MÍ</h2>
+    <div class="about-grid">
+      <div class="pixel-card fade-in">
+        <p class="about-text">
+          Estudiante de Ingeniería en Desarrollo de Software en UTT, Tijuana.<br><br>
+          Con experiencia real en desarrollo backend, full-stack y móvil.
+          He construido proyectos completos con Flutter, Django y Java — siempre buscando que el código sea limpio y funcional.<br><br>
+          Busco una pasantía en una empresa tech de alto impacto donde pueda crecer como ingeniero.
+        </p>
+      </div>
+      <div class="stat-box fade-in">
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div>
+            <span class="stat-label">EDUCACIÓN</span>
+            <span class="stat-value">UTT — Ing. Soft Dev</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">📍</div>
+          <div>
+            <span class="stat-label">UBICACIÓN</span>
+            <span class="stat-value">Tijuana, B.C. México</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🌐</div>
+          <div>
+            <span class="stat-label">IDIOMAS</span>
+            <span class="stat-value">Español (Nativo) · Inglés B1</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⭐</div>
+          <div>
+            <span class="stat-label">PROMEDIO</span>
+            <span class="stat-value">9.56 / 10</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">💼</div>
+          <div>
+            <span class="stat-label">ESTADO</span>
+            <span class="stat-value">Buscando internship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ SKILLS ================ -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title fade-in">⚡ HABILIDADES</h2>
+    <div class="skills-grid">
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ LENGUAJES</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ WEB & UI</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Flexbox</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Animations</span>
+          <span class="skill-tag">Responsive</span>
+        </div>
+      </div>
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ FRAMEWORKS</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ BASES DE DATOS</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">CRUD</span>
+          <span class="skill-tag">NoSQL</span>
+        </div>
+      </div>
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ HERRAMIENTAS</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">IntelliJ</span>
+          <span class="skill-tag">Packet Tracer</span>
+        </div>
+      </div>
+      <div class="skill-category fade-in">
+        <div class="skill-cat-title">▸ REDES & OTROS</div>
+        <div class="skill-tags">
+          <span class="skill-tag">IPv4/IPv6</span>
+          <span class="skill-tag">VLANs</span>
+          <span class="skill-tag">DHCP</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">Godot/GDScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ground -->
+<div class="pixel-ground"></div>
+
+<!-- ================ PROJECTS ================ -->
+<section id="projects" class="section-panel">
+  <div class="container">
+    <h2 class="section-title fade-in">🎮 PROYECTOS</h2>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-pixel-header ph-flutter">✈️</div>
+        <div class="project-body">
+          <div class="project-name">TRAVEL RESERVATION SYSTEM</div>
+          <p class="project-desc">App móvil Flutter para reservas de viaje con selección de asientos, gestión de reservas y pago simulado. Integra REST APIs para datos dinámicos en tiempo real.</p>
+          <div class="project-tech">
+            <span class="tech-badge">FLUTTER</span>
+            <span class="tech-badge">DART</span>
+            <span class="tech-badge">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-pixel-header ph-django">👥</div>
+        <div class="project-body">
+          <div class="project-name">MEMBERSHIP MGMT SYSTEM</div>
+          <p class="project-desc">Plataforma web completa para el ciclo de vida de membresías: registro, renovación, cancelación y seguimiento de beneficios con Django y MySQL.</p>
+          <div class="project-tech">
+            <span class="tech-badge">DJANGO</span>
+            <span class="tech-badge">MYSQL</span>
+            <span class="tech-badge">CRUD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-pixel-header ph-java">🍰</div>
+        <div class="project-body">
+          <div class="project-name">DESSERT SHOP ORDERING</div>
+          <p class="project-desc">Aplicación desktop Java con catálogo de productos, flujo de compra y generación automática de recibos. Diseñada con principios POO sólidos.</p>
+          <div class="project-tech">
+            <span class="tech-badge">JAVA</span>
+            <span class="tech-badge">OOP</span>
+            <span class="tech-badge">DESKTOP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-pixel-header ph-network">🌐</div>
+        <div class="project-body">
+          <div class="project-name">NETWORK CONFIG & ROUTING LABS</div>
+          <p class="project-desc">Configuración de routers y switches con IPv4/IPv6, VLANs, DHCP, trunking y subinterfaces. Topologías a nivel empresarial simuladas en Cisco Packet Tracer.</p>
+          <div class="project-tech">
+            <span class="tech-badge">CISCO</span>
+            <span class="tech-badge">VLANS</span>
+            <span class="tech-badge">ROUTING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-pixel-header ph-web">🖥️</div>
+        <div class="project-body">
+          <div class="project-name">FREELANCE WEB PROJECTS</div>
+          <p class="project-desc">Sitios web funcionales para clientes locales con HTML, CSS y JavaScript. Diseño responsivo con Flexbox, animaciones CSS y prototipos Bootstrap.</p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JS</span>
+            <span class="tech-badge">BOOTSTRAP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" style="border-color:#FF4081;">
+        <div class="project-pixel-header ph-rbe">
+          <span style="font-family:'Press Start 2P',monospace;font-size:22px;color:#FFD700;text-shadow:3px 3px 0 #000;">RBE</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name" style="color:#FF4081;">ROBOT BATTLE ENGINE</div>
+          <p class="project-desc">Motor de combate por turnos donde robots programables se enfrentan usando lógica definida por el jugador. Arquitectura orientada a eventos, sistema de stats y simulación de batalla paso a paso.</p>
+          <div class="project-tech">
+            <span class="tech-badge" style="border-color:#FF4081;color:#FF4081;">ENGINE</span>
+            <span class="tech-badge" style="border-color:#FF4081;color:#FF4081;">OOP</span>
+            <span class="tech-badge" style="border-color:#FF4081;color:#FF4081;">GAME DEV</span>
+            <span class="tech-badge" style="border-color:#FF4081;color:#FF4081;">LOGIC SIM</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================ EXPERIENCE ================ -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title fade-in">📜 EXPERIENCIA</h2>
+    <div class="timeline">
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 — PRESENTE</div>
+        <div class="timeline-title">FREELANCE WEB DEVELOPER</div>
+        <div class="timeline-company">Clientes Independientes — Tijuana, B.C.</div>
+        <div class="timeline-desc">
+          Diseño y desarrollo de sitios web para clientes locales de principio a fin. Manejo de requerimientos, entrega y feedback. UI responsiva con Flexbox, animaciones CSS y Bootstrap.
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot" style="background:#00E5FF;"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-title">TECHNICAL SUPPORT INTERN</div>
+        <div class="timeline-company">Universidad Tecnológica de Tijuana (UTT)</div>
+        <div class="timeline-desc">
+          Soporte técnico a estudiantes y staff en laboratorios de cómputo. Troubleshooting de hardware/software y mantenimiento preventivo. Configuración de equipos de red en instalaciones del campus.
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot" style="background:#4CAF50;"></div>
+        <div class="timeline-date">2024 — PRESENTE</div>
+        <div class="timeline-title">B.S. SOFTWARE DEVELOPMENT ENGINEERING</div>
+        <div class="timeline-company">Universidad Tecnológica de Tijuana</div>
+        <div class="timeline-desc">
+          En progreso · GPA: 9.56/10
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot" style="background:#FF6B35;"></div>
+        <div class="timeline-date">2021 — 2024</div>
+        <div class="timeline-title">TECHNICAL DEGREE IN PROGRAMMING</div>
+        <div class="timeline-company">CECyTE Baja California</div>
+        <div class="timeline-desc">
+          Título técnico en Programación obtenido.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================ GITHUB ================ -->
+<section id="github">
+  <div class="container">
+    <h2 class="section-title fade-in">
+      <svg style="display:inline;vertical-align:middle;margin-right:12px;" width="28" height="28" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      GITHUB
+    </h2>
+    <div class="github-card fade-in">
+      <p class="github-desc">
+        Todo mi código vive aquí — proyectos, experimentos y trabajo en progreso.<br>
+        ¡Dale un vistazo y déjame una ⭐ si algo te gusta!
+      </p>
+      <div class="github-stats">
+        <div class="gh-stat">REPOS<span class="gh-stat-num">🗂️ VARIOS</span></div>
+        <div class="gh-stat">LENGUAJES<span class="gh-stat-num">6+</span></div>
+        <div class="gh-stat">ESTADO<span class="gh-stat-num">🟢 ACTIVO</span></div>
+      </div>
+      <a href="https://github.com/MisaelUrquidez" target="_blank" rel="noopener" class="github-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        VER MI GITHUB
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Ground -->
+<div class="pixel-ground"></div>
+
+<!-- ================ CONTACT ================ -->
+<section id="contact" class="section-panel">
+  <div class="container">
+    <h2 class="section-title fade-in">📡 CONTACTO</h2>
+    <div class="pixel-card fade-in" style="text-align:center;">
+      <p style="font-size:20px; color:var(--cream); margin-bottom:32px; letter-spacing:2px; line-height:1.8;">
+        ¿Tienes una oportunidad de internship o proyecto?<br>
+        ¡Hablemos! Siempre abierto a nuevas aventuras en el mundo del desarrollo.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <span>misaelcuentuatv@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span>+52 664 372 1587</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Tijuana, Baja California, México</span>
+        </div>
+      </div>
+      <a href="mailto:misaelcuentuatv@gmail.com" class="pixel-btn" style="margin-top:16px;">
+        ▶ ENVIAR MENSAJE
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>CRAFTED WITH <span>♥</span> BY MISAEL URQUIDEZ · 2026 · PIXEL ART PORTFOLIO</p>
+</footer>
+
+<script src="portafolio.js"></script>
+</body>
+</html>
