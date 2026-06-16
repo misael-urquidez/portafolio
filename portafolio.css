@@ -126,7 +126,14 @@ section {
 }
 .hero-subtitle {
   font-family: 'VT323', monospace; font-size: clamp(20px, 3vw, 28px);
-  color: var(--accent); margin-bottom: 32px; letter-spacing: 3px;
+  color: #FF4081; margin-bottom: 32px; letter-spacing: 3px;
+  text-shadow: 2px 2px 0 #1a0a2e, 0 0 12px rgba(255,64,129,0.5);
+  transition: color 0.3s, text-shadow 0.3s;
+  cursor: default;
+}
+.hero-subtitle:hover {
+  color: #FFD700;
+  text-shadow: 2px 2px 0 #1a0a2e, 0 0 16px rgba(255,215,0,0.8), 0 0 32px rgba(255,215,0,0.4);
 }
 .typing-text::after { content: '|'; animation: blink 0.7s steps(1) infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
